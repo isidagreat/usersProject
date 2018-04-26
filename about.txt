@@ -1,0 +1,4 @@
+This will project consists of creating a blank table with a users information
+First name, last name, email, and phone number.
+
+These inputs will be appended to a table above the form

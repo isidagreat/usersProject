@@ -1,0 +1,38 @@
+/*Reset CSS*/
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+.formContainer{
+	width: 287px;
+	height: 300px;
+	border-top: 3px solid black;
+}
+.typeOfInput{
+	width: 138px;
+	height: 300px;
+	display: inline-block;
+
+	vertical-align: top;
+	}
+	.typeOfInput p{
+		margin-top: 1%;
+	}
+.formInput{
+	width: 145px;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+th{
+	margin-left: 1px;
+}
+h1{
+	margin-top: 8%;
+}
+.formInput button{
+	margin-top: 14%;
+	margin-left: 52%;
+}
+

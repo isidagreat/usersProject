@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Add Users</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<script >
+	$(document).ready(function(){
+	
+		$("button").click(function(){
+		var ffName = $("#name").val();
+		var last= $("#lastname").val();
+		var mail= $("#e-mail").val();
+		var Contact = $ ("#phun").val();
+			$("#userInfo tr:last").after("<tr><td>"+ffName+"</td><td>"+last+"</td><td>"+mail+"</td><td>"+Contact+"</td></tr>");
+		});
+	});		
+
+	</script>
+</head>
+<body>
+	<!-- this table will contain the the users input -->
+	<table id="userInfo">
+		<!-- This is the header for the table -->
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email Address</th>
+			<th>Contact #</th>			
+		</tr>
+		<!-- Anyththing added past this point will be an entry  -->
+		
+	</table>
+
+	<!-- This will be the form that takes in input -->
+	<!-- This div will contain the form together -->
+	<h1>Add User</h1>
+	<div class="formContainer">
+		<div class="typeOfInput">
+			<p>First Name</p>
+			<p>Last Name</p>
+			<p>Email Address</p>
+			<p>Phone #</p>
+
+		</div>
+		<div class="formInput">
+			<form id="form1">
+				<input id="name" type="text" name="fName">
+				<input id="lastname" type="text" name="lName">
+				<input id="e-mail" type="text" name="email">
+				<input id="phun" type="text" name="phone">
+			</form>
+			<button type="submit"  value="submit">Add User</button>
+		</div>
+		
+	</div>
+</body>
+</html>
